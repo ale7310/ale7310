@@ -1,0 +1,261 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8b2c7c;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+    padding: 30px;
+}
+
+p{
+    max-width: 700px;
+    margin: auto;
+    color: rgb(97, 96, 96);
+}
+
+
+/*INICIO */
+
+.inicio .contenido-seccion{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("images/image4.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: whitesmoke;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+
+}
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+
+img{
+    height:250px ;
+    width: 250px;
+    range: center;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(219, 141, 23);
+    
+}
+
+/*MENU NAVEGADOR*/
+
+.inicio .contenido-seccion header nav{
+position: fixed;
+margin-left: 60px;
+background-color: rgb(255, 94, 0);
+padding: 15px;
+border-radius: 10px;
+text-align: left;
+z-index: 99;
+display: none;
+}
+
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: rgb(139, 60, 14);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px aliceblue;
+}
+
+.inicio .contenido-seccion .info{
+    padding-bottom: 100x;
+
+}
+.inicio .contenido-seccion .info h1{
+font-size: 3rem;
+}
+
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+    padding: 30px;
+    color: aliceblue;
+}
+
+/*FORMACION ACADEMICA*/
+
+.formacion{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e2e2;
+    padding: 140px 0 100px 0;
+}
+.formacion .contenido-seccion .fila{
+    display: flex;
+}
+
+/*EXPERIENCIA*/
+
+.experiencia .contenido-seccion h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.experiencia .contenido-seccion h4{
+    font-size: large;
+}
+
+.experiencia .contenido-seccion h4 p{
+    padding: 120px 50px 100px 50px;
+}
+
+/*HABILIDADES*/
+
+.habilidades{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e2e2;
+    padding: 140px 0px 100px 0;
+}
+
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30;
+    justify-content: space-between;    
+}
+
+.habilidades .contenido-seccion ul{
+    max-width: 700px;
+    margin: 20px 50px  20px 50px;
+    color: rgb(97, 96, 96);
+}
+
+.habilidades ul li{
+    text-transform: capitalize;
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px 20px;
+
+}
+
+.habilidades .contenido-seccion h2{
+    padding: 10px;
+}
+
+/*LOGROS LABORALES*/
+
+.logros{
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 140px 0 100px 
+}
+
+.logros ul li{
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px 20px;
+    list-style: none;
+}
+
+/*CONTACTOS*/
+
+.contactos{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e2e2;
+    padding: 140px 0 100px 0;
+}
+.contactos .contenido-seccion nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.contactos .contenido-seccion nav ul li{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-widht:800px){
+    .habilidades .contenido-seccion .fila{
+        display: block;
+    }
+    .habilidades .contenido-seccion ul{
+        width: 100%;
+        text-align: center;
+    }
+    .logros{
+        display: block;
+    }
+    .logros ul li{
+        width: 80%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .formacion .contenido-seccion .fila{
+        display: block;
+    }
+    .formacion .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .inicio .contenido-seccion .info{
+        display: block;
+        text-align: center;
+    }
+
+
+}
+
+
+    
+
+
+   
+
+ 
+
+
