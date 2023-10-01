@@ -17,7 +17,7 @@ h2{
 
 /*INICIO */
 
-.inicio .contenido-seccion{
+.inicio .contenido-sección{
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
     url("images/image4.jpg");
     background-size: cover;
@@ -29,7 +29,7 @@ h2{
     padding: 0 10px;
 
 }
-.inicio .contenido-seccion header{
+.inicio .contenido-sección header{
     padding: 30px;
 }
 
@@ -45,7 +45,7 @@ img{
 
 /*MENU NAVEGADOR*/
 
-.inicio .contenido-seccion header nav{
+.inicio .contenido-sección header nav{
 position: fixed;
 margin-left: 60px;
 background-color: rgb(255, 94, 0);
@@ -56,7 +56,7 @@ z-index: 99;
 display: none;
 }
 
-.inicio .contenido-seccion header nav a{
+.inicio .contenido-sección header nav a{
     display: block;
     color: aliceblue;
     text-decoration: none;
@@ -64,7 +64,7 @@ display: none;
     font-weight: bold;
 }
 
-.inicio .contenido-seccion header .nav-bar{
+.inicio .contenido-sección header .nav-bar{
     position: fixed;
     background-color: rgb(139, 60, 14);
     font-size: 20px;
@@ -76,19 +76,19 @@ display: none;
     transition: .3s;
 }
 
-.inicio .contenido-seccion header .nav-bar:hover{
+.inicio .contenido-sección header .nav-bar:hover{
     box-shadow: 0 0 35px aliceblue;
 }
 
-.inicio .contenido-seccion .info{
+.inicio .contenido-sección .info{
     padding-bottom: 100x;
 
 }
-.inicio .contenido-seccion .info h1{
+.inicio .contenido-sección .info h1{
 font-size: 3rem;
 }
 
-.inicio .contenido-seccion .info h2{
+.inicio .contenido-sección .info h2{
     font-weight: normal;
     font-size: 30px;
     margin-top: -10px;
@@ -99,27 +99,27 @@ font-size: 3rem;
 
 /*FORMACION ACADEMICA*/
 
-.formacion{ 
+.formación{ 
     background-color: #e4e2e2;
     padding: 140px 0 100px 0;
     
 }
    
-.formacion h2{
+.formación h2{
     font-size: 40px;
     text-align: center;
     padding: 20px 0;
 } 
 
-.formacion .fila{
+.formación .fila{
     display: flex;
 }
 
-.formacion .fila .col{
+.formación .fila .col{
     width: 50%;   
 }
 
-.formacion .fila .col h3{
+.formación .fila .col h3{
     font-family: Arial, Helvetica, sans-serif;
     display: inline-table;
     font-size: 28px;
@@ -128,7 +128,7 @@ font-size: 3rem;
     border-radius: 15px;
 }
 
-.formacion .contenido-seccion p{
+.formación .contenido-sección p{
     padding: 5px 10px 10px 100px;
     color: rgb(97, 96, 96);    
 }
@@ -146,26 +146,27 @@ font-size: 3rem;
     color: #fff;
 }
 
-.experiencia .contenido-seccion h2{
+.experiencia .contenido-sección h2{
     text-align: center;
     padding: 20px;
+    color: #fff;
 }
 
-.experiencia .contenido-seccion h3{
+.experiencia .contenido-sección h3{
     display: inline-table;
-    color: #2522d1;
+    color: #c4aae2;
     font-weight: bold;
-    border: 2px solid #8b2c7c;
+    border: 2px solid #2522d1;
     border-radius: 25px;
     padding: 0;
 }
 
-.experiencia .contenido-seccion h4{
+.experiencia .contenido-sección h4{
     font-size: large;
     
 }
 
-.experiencia .contenido-seccion p{
+.experiencia .contenido-sección p{
     padding: 5px 10px 10px 100px;
     max-width: 700px;
     margin: auto;    
@@ -183,13 +184,13 @@ font-size: 3rem;
     padding: 140px 0px 100px 0;
 }
 
-.habilidades .contenido-seccion .fila{
+.habilidades .contenido-sección .fila{
     display: flex;
     margin-top: 30;
     justify-content: space-between;    
 }
 
-.habilidades .contenido-seccion ul{
+.habilidades .contenido-sección ul{
     max-width: 700px;
     margin: 20px 50px  20px 50px;
     color: rgb(97, 96, 96);
@@ -204,7 +205,7 @@ font-size: 3rem;
 
 }
 
-.habilidades .contenido-seccion h2{
+.habilidades .contenido-sección h2{
     padding: 10px;
 }
 .habilidades .titulo-detalle{
@@ -283,14 +284,14 @@ padding: 140px 0 140px
     background-color: #e4e2e2;
     padding: 140px 0 140px 0;
 }
-.contactos .contenido-seccion nav ul{
+.contactos .contenido-sección nav ul{
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 10px 0 5px 0;
 }
 
-.contactos .contenido-seccion nav ul li{
+.contactos .contenido-sección nav ul li{
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px 20px;
@@ -308,7 +309,7 @@ padding: 140px 0 140px
     font-size: 12px;
     color: rgb(37, 18, 206);
     position: relative;
-    
+    z-index: 10;
     }
 
     .contactos button .overlay{
@@ -329,10 +330,10 @@ padding: 140px 0 140px
 
     /* SECCION RESPONSIVE */
 @media screen and (max-widht:800px){
-    .habilidades .contenido-seccion .fila{
+    .habilidades .contenido-sección .fila{
         display: block;
     }
-    .habilidades .contenido-seccion ul{
+    .habilidades .contenido-sección ul{
         width: 100%;
         text-align: center;
     }
@@ -344,15 +345,15 @@ padding: 140px 0 140px
         text-align: center;
         margin-top: 20px;
     }
-    .formacion .contenido-seccion .fila{
+    .formacion .contenido-sección .fila{
         display: block;
     }
-    .formacion .contenido-seccion .fila .col{
+    .formacion .contenido-sección .fila .col{
         width: 80%;
         margin: auto;
         margin-top: 20px;
     }
-    .inicio .contenido-seccion .info{
+    .inicio .contenido-sección .info{
         display: block;
         text-align: center;
     }
