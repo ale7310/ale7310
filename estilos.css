@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-html{
+.html{
     scroll-behavior: smooth;
 }
 
@@ -55,7 +55,7 @@ img{
     range: center;
     max-width: 200px;
     border-radius: 50%;
-    border: 5px solid rgb(219, 141, 23);
+    border: 5px solid rgb(219, 141, 23)
     
 }
 
@@ -115,16 +115,30 @@ font-size: 3rem;
 
 /*FORMACION ACADEMICA*/
 
-.formacion{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.formacion{ 
+    
     background-color: #e4e2e2;
     padding: 140px 0 100px 0;
 }
-.formacion .contenido-seccion .fila{
+   
+.formacion h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+} 
+
+.formacion .fila{
     display: flex;
+}
+
+.formacion .fila .col{
+    width: 50%;   
+}
+
+.formacion .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+    display: block;
 }
 
 /*EXPERIENCIA*/
@@ -134,12 +148,22 @@ font-size: 3rem;
     padding: 20px;
 }
 
-.experiencia .contenido-seccion h4{
-    font-size: large;
+.experiencia .contenido-seccion h3{
+    display: inline-table;
+    color: #2522d1;
+    font-weight: bold;
+    border: 2px solid #8b2c7c;
+    padding: 0;
+
 }
 
-.experiencia .contenido-seccion h4 p{
-    padding: 120px 50px 100px 50px;
+.experiencia .contenido-seccion h4{
+    font-size: large;
+    
+}
+
+.experiencia .contenido-seccion p{
+    padding: 5px 10px 10px 100px;
 }
 
 /*HABILIDADES*/
@@ -147,6 +171,7 @@ font-size: 3rem;
 .habilidades{
     text-align: center;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #e4e2e2;
@@ -177,6 +202,14 @@ font-size: 3rem;
 .habilidades .contenido-seccion h2{
     padding: 10px;
 }
+.habilidades .titulo-detalle{
+    display: inline-table;
+    color: #2522d1;
+    font-weight: bold;
+    border: 2px solid #8b2c7c;
+    padding: 5px;
+
+ }
 
 /*LOGROS LABORALES*/
 
@@ -185,7 +218,11 @@ text-align: center;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 140px 0 100px 
+padding: 140px 0 140px 
+}
+.logros h2{
+    margin: auto;
+    padding: 5px;
 }
 
 .logros ul li{
@@ -195,21 +232,57 @@ padding: 140px 0 100px
     padding: 5px 20px;
     list-style: none;
 }
+.logros p{
+    padding: 10px;
+}
+.logros #audio{
+    display: none;
+    padding: 50px;
+}
+
+.logros button{
+    border: 0;
+    background-image: linear-gradient(150deg,
+    #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition:  .3s; 
+}
+
+.logos button .span{
+    border-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition:  .3s;
+}
+
+.logros button:hover .span{
+    background-color: none;
+}
+
+.logros button:active{
+    transform: scale(0.9);
+}
 
 /*CONTACTOS*/
 
 .contactos{
-    text-align: center;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #e4e2e2;
-    padding: 140px 0 100px 0;
+    padding: 140px 0 140px 0;
 }
 .contactos .contenido-seccion nav ul{
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 10px 0 5px 0;
 }
 
 .contactos .contenido-seccion nav ul li{
@@ -217,7 +290,39 @@ padding: 140px 0 100px
     margin-right: 20px;
     padding: 10px 20px;
 }
-/* SECCION RESPONSIVE */
+
+.contactos button{
+    cursor: pointer;
+    background-color: transparent;
+    border:  3px solid rgb(37, 18, 206);
+    border-radius: 10px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 12px;
+    color: rgb(37, 18, 206);
+    position: relative;
+    z-index: 10;
+    }
+
+    .contactos button .overlay{
+       position: absolute; 
+       top: 0;
+       left: 0;
+       width: 0;
+       height: 100%;
+       background-color: aqua;
+       z-index: -1;
+       transition: 1s;
+    }
+
+    .contactos button:hover .overlay{
+        width: 100%;
+    }
+
+
+    /* SECCION RESPONSIVE */
 @media screen and (max-widht:800px){
     .habilidades .contenido-seccion .fila{
         display: block;
