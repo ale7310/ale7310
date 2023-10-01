@@ -15,22 +15,6 @@ h2{
     color: #8b2c7c;
 }
 
-h3{
-    font-size: 1rem;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: -10px;
-    letter-spacing: 2px;
-    padding: 30px;
-}
-
-p{
-    max-width: 700px;
-    margin: auto;
-    color: rgb(97, 96, 96);
-}
-
-
 /*INICIO */
 
 .inicio .contenido-seccion{
@@ -116,9 +100,9 @@ font-size: 3rem;
 /*FORMACION ACADEMICA*/
 
 .formacion{ 
-    
     background-color: #e4e2e2;
     padding: 140px 0 100px 0;
+    
 }
    
 .formacion h2{
@@ -136,12 +120,31 @@ font-size: 3rem;
 }
 
 .formacion .fila .col h3{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-table;
     font-size: 28px;
-    margin-bottom: 25px;
-    display: block;
+    letter-spacing: 2px;
+    border: solid 3px #8b2c7c;
+    border-radius: 15px;
+}
+
+.formacion .contenido-seccion p{
+    padding: 5px 10px 10px 100px;
+    color: rgb(97, 96, 96);    
 }
 
 /*EXPERIENCIA*/
+
+.experiencia{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("images/fondo2.jpg");
+    background-color: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
 
 .experiencia .contenido-seccion h2{
     text-align: center;
@@ -153,8 +156,8 @@ font-size: 3rem;
     color: #2522d1;
     font-weight: bold;
     border: 2px solid #8b2c7c;
+    border-radius: 25px;
     padding: 0;
-
 }
 
 .experiencia .contenido-seccion h4{
@@ -164,6 +167,8 @@ font-size: 3rem;
 
 .experiencia .contenido-seccion p{
     padding: 5px 10px 10px 100px;
+    max-width: 700px;
+    margin: auto;    
 }
 
 /*HABILIDADES*/
@@ -250,14 +255,14 @@ padding: 140px 0 140px
     font-size: 18px;
     padding: 4px;
     cursor: pointer;
-    transition:  .3s; 
+    transition: .3s; 
 }
 
 .logos button .span{
     border-color: #111;
     padding: 16px 24px;
     border-radius: 6px;
-    transition:  .3s;
+    transition: .3s;
 }
 
 .logros button:hover .span{
@@ -303,7 +308,7 @@ padding: 140px 0 140px
     font-size: 12px;
     color: rgb(37, 18, 206);
     position: relative;
-    z-index: 10;
+    
     }
 
     .contactos button .overlay{
