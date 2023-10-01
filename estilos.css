@@ -34,12 +34,12 @@ h2{
 }
 
 img{
-    height:250px ;
+    height: 250px ;
     width: 250px;
     range: center;
-    max-width: 200px;
-    border-radius: 50%;
-    border: 5px solid rgb(219, 141, 23)
+    max-width: 190px;
+    border-radius: 100%;
+    border: 5px solid rgb(219, 141, 23);
     
 }
 
@@ -82,8 +82,17 @@ display: none;
 
 .inicio .contenido-sección .info{
     padding-bottom: 100x;
-
 }
+
+inicio .contenido-sección .info img{
+    height: 250px ;
+    width: 250px;
+    range: center;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(219, 141, 23);    
+}
+
 .inicio .contenido-sección .info h1{
 font-size: 3rem;
 }
@@ -130,6 +139,7 @@ font-size: 3rem;
     flex-direction: column;
     justify-content: right;
     align-items: center;
+    
 }
 
 .formación h3{
@@ -145,12 +155,14 @@ font-size: 3rem;
 .formación h4{
     margin: 10px;
     font-size: 21px;
+    text-align: center;
 }
 
 .formación .contenido-sección p{
     font-size: 19px;
     padding: 5px 10px 10px 100px;
-    color: rgb(97, 96, 96);    
+    color: rgb(97, 96, 96);
+    text-align: center;    
 }
 
 /*EXPERIENCIA*/
@@ -163,8 +175,10 @@ font-size: 3rem;
     background-color: cover;
     background-attachment: fixed;
     background-position: center center;
+    background-size: 1800PX;
     color: #fff;
 }
+
 
 .experiencia .contenido-sección h2{
     text-align: center;
@@ -174,16 +188,17 @@ font-size: 3rem;
 
 .experiencia .contenido-sección h3{
     display: inline-table;
+    text-align: center;
     color: #c4aae2;
     font-weight: bold;
     border: 2px solid #2522d1;
     border-radius: 25px;
-    padding: 0;
+    
 }
 
 .experiencia .contenido-sección h4{
     font-size: large;
-    
+    text-align: center;    
 }
 
 .experiencia .contenido-sección p{
