@@ -396,6 +396,19 @@ padding: 140px 0 140px
         text-align: center;
     }
 
+    .contactos .contenido-sección nav ul li button{ 
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .contactos .contenido-sección button .span{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
 
 }
 
